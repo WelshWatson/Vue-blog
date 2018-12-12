@@ -9630,3 +9630,7 @@
  .close:hover {
    color: #b9a78a;
  }
+
+ .full-width {
+  width: -webkit-fill-available;
+ }

@@ -1,21 +1,25 @@
 <template>
   <div id="app">
-    <Navbar header="Welcome to Your Vue.js App"/>
+    <Navbar />
+    <div class="container">
     <Home />
         <img alt="Vue logo" src="./assets/logo.png">
-
+    </div>
+    <mainRouter />
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue';
-import Home from './components/Home';
+import Navbar from './components/navbar/index';
+import Home from './components/home/index';
+import mainRouter from './components/main-router/index';
 
 export default {
   name: 'app',
   components: {
     Navbar,
-    Home
+    Home,
+    mainRouter
   }
 }
 </script>
